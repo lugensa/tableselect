@@ -1,9 +1,9 @@
 # Changelog
 
 
-## 0.4.0 (unreleased)
+## 0.4.0.dev0 (unreleased)
 
-- Nothing changed yet.
+- Update to DataTables 1.10.18 as dependency.
 
 
 ## 0.3.0 (2020-04-27)

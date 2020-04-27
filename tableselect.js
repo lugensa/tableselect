@@ -13,17 +13,17 @@ var tableselect = {};
         var table = $('<table id=""></table>');
         table.insertBefore(original);
         var options = {
-            "aaData": tableselect[original.attr('id')]['aaData'],
-            "aoColumns": tableselect[original.attr('id')]['aoColumns'],
-            "oLanguage": tableselect[original.attr('id')]['oLanguage'],
-            "aaSorting": tableselect[original.attr('id')]['aaSorting'],
-            "bFilter": true,
-            "bAutoWidth": false,
-            "sScrollY": "300px",
-            "bPaginate": false,
-            "sDom": 'ft',
-            "bScrollCollapse": true
-        }
+            "data": tableselect[original.attr('id')]['data'],
+            "columns": tableselect[original.attr('id')]['columns'],
+            "language": tableselect[original.attr('id')]['language'],
+            "ordering": tableselect[original.attr('id')]['ordering'],
+            "searching": true,
+            "autoWidth": false,
+            "scrollY": "300px",
+            "paging": false,
+            "dom": 'ft',
+            "scrollCollapse": true
+        };
         table.dataTable(options);
         var rows_data = table._('tr');
         var rows = table.$('tr');
@@ -43,6 +43,6 @@ var tableselect = {};
             }
 
         });
-    }
+    };
 
 })(jQuery);

@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/gocept/tableselect",
   "dependencies": {
-    "datatables": "<=1.10.7"
+    "datatables": "^1.10.18"
   }
 }
