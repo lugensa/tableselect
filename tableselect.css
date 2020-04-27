@@ -1,0 +1,23 @@
+table.dataTable tr.odd {
+
+}
+table.dataTable tr.odd td.sorting_1,
+table.dataTable thead tr th,
+table.dataTable tr.odd {
+    background-color: white;
+}
+
+table.dataTable tr.even td.sorting_1,
+table.dataTable tr.even {
+    background-color: #EEE;
+}
+
+table.dataTable tr.row_selected,
+table.dataTable tr.row_selected td.sorting_1,
+table.dataTable tr.row_selected td {
+    background-color: #E6C6C6;
+}
+
+table.dataTable tr td {
+    border: 1px solid #CCC;
+}

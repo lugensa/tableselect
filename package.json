@@ -1,0 +1,26 @@
+{
+  "name": "tableselect",
+  "version": "0.3.0",
+  "description": "A library that provides a widget which transforms a multiselect to a searchable sortable table with selectable rows.",
+  "main": "tableselect.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocept/tableselect.git"
+  },
+  "keywords": [
+    "datatables",
+    "multiselect"
+  ],
+  "author": {
+    "name": "Daniel Havlik",
+    "email": "mail@gocept.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gocept/tableselect/issues"
+  },
+  "homepage": "https://github.com/gocept/tableselect",
+  "dependencies": {
+    "datatables": "<=1.10.7"
+  }
+}
