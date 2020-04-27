@@ -1,6 +1,6 @@
 {
   "name": "tableselect",
-  "version": "0.4.0.dev0",
+  "version": "0.4.0",
   "description": "A library that provides a widget which transforms a multiselect to a searchable sortable table with selectable rows.",
   "main": "tableselect.js",
   "repository": {
