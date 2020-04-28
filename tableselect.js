@@ -24,8 +24,8 @@
             "dom": 'ft',
             "scrollCollapse": true
         };
-        table.DataTable(options);
-        var rows_data = table._('tr');
+        table = table.DataTable(options);
+        var rows_data = table.rows().data();
         var rows = table.$('tr');
         for (x=0; x<rows.length; x++) {
             var checkvalue = rows_data[x][0];
