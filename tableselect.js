@@ -1,5 +1,3 @@
-var tableselect = {};
-
 (function($) {
     $.fn.tableselect = function() {
         return this.each(function(index) {
@@ -9,14 +7,16 @@ var tableselect = {};
         });
     };
 
-    var init_widget = function(original) {
+    var init_widget = function(original, tableselect) {
         var table = $('<table id=""></table>');
         table.insertBefore(original);
+        // We expect an item with initialized tableselectData containing data,
+        // columns, language and ordering
         var options = {
-            "data": tableselect[original.attr('id')]['data'],
-            "columns": tableselect[original.attr('id')]['columns'],
-            "language": tableselect[original.attr('id')]['language'],
-            "ordering": tableselect[original.attr('id')]['ordering'],
+            "data": original.data('tableselectData')['data'],
+            "columns": original.data('tableselectData')['columns'],
+            "language": original.data('tableselectData')['language'],
+            "ordering": original.data('tableselectData')['ordering'],
             "searching": true,
             "autoWidth": false,
             "scrollY": "300px",
