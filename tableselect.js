@@ -24,7 +24,7 @@
             "dom": 'ft',
             "scrollCollapse": true
         };
-        table.dataTable(options);
+        table.DataTable(options);
         var rows_data = table._('tr');
         var rows = table.$('tr');
         for (x=0; x<rows.length; x++) {
