@@ -10,13 +10,13 @@
     var init_widget = function(original, tableselect) {
         var table = $('<table id=""></table>');
         table.insertBefore(original);
-        // We expect an item with initialized tableselectData containing data,
+        // We expect an item with initialized tableselect-data containing data,
         // columns, language and ordering
         var options = {
-            "data": original.data('tableselectData')['data'],
-            "columns": original.data('tableselectData')['columns'],
-            "language": original.data('tableselectData')['language'],
-            "ordering": original.data('tableselectData')['ordering'],
+            "data": original.data('tableselect-data')['data'],
+            "columns": original.data('tableselect-data')['columns'],
+            "language": original.data('tableselect-data')['language'],
+            "ordering": original.data('tableselect-data')['ordering'],
             "searching": true,
             "autoWidth": false,
             "scrollY": "300px",
