@@ -34,7 +34,7 @@
             }
         }
         table.$('tr').click(function(ev) {
-            var value = table.fnGetData(this)[0];
+            var value = table.row(this).data()[0];
             var option = original.find('option[value='+value+']');
             if ($(this).toggleClass('row_selected').hasClass('row_selected')) {
                 option.attr('selected', 'selected');
